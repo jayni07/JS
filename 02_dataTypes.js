@@ -5,3 +5,6 @@
 console.log("hello"); console.log("hie") //very  bad practice. code should be well formed and structured and readable.
 
 console.log(typeof null);
+
+//numbers,string,datatypes,null,undefined,symbol
+

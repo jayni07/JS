@@ -25,4 +25,44 @@ const myFunc=function(){
 }
 
 const id=Symbol("123")
-const anotherId=symbol("123")
+const anotherId=Symbol("123")
+
+/*Return type of variables in JavaScript
+1) Primitive Datatypes
+       Number => number
+       String  => string
+       Boolean  => boolean
+       null  => object
+       undefined  =>  undefined
+       Symbol  =>  symbol
+       BigInt  =>  bigint
+
+2) Non-primitive Datatypes
+       Arrays  =>  object
+       Function  =>  function
+       Object  =>  object */
+
+
+//************************HEAP(non-primitve) AND STACK(primitive)*************************************/
+let myYoutube="jaynijoshi.com"
+
+let anotherYoutube=myYoutube
+anotherYoutube="jayni07"    //as it only assigns the copy to anotherYoutube. no changes are made in the myYoutube. 
+
+console.log(anotherYoutube);
+console.log(myYoutube);
+
+//NON PRIMITIVE
+
+let user={
+    name:"jayni",
+    year:4
+}
+
+let user1=user
+user1.name="abc"
+
+console.log(user1)
+console.log(user);
+
+
